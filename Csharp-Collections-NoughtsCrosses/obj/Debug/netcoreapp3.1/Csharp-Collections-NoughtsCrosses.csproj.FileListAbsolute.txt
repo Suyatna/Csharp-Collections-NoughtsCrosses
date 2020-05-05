@@ -1,0 +1,13 @@
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\bin\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.exe
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\bin\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.deps.json
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\bin\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.runtimeconfig.json
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\bin\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.runtimeconfig.dev.json
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\bin\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.dll
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\bin\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.pdb
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\obj\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.csprojAssemblyReference.cache
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\obj\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.csproj.CoreCompileInputs.cache
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\obj\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.AssemblyInfoInputs.cache
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\obj\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.AssemblyInfo.cs
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\obj\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.dll
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\obj\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.pdb
+E:\Projects_C#\Csharp-Collections-NoughtsCrosses\Csharp-Collections-NoughtsCrosses\obj\Debug\netcoreapp3.1\Csharp-Collections-NoughtsCrosses.genruntimeconfig.cache
