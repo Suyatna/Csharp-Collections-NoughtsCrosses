@@ -7,6 +7,7 @@ namespace Csharp_Collections_NoughtsCrosses
         static void Main(string[] args)
         {
             Game game = new Game();
+            game.PlayGame();
             Console.WriteLine("Game Over");
         }
     }
