@@ -6,7 +6,8 @@ namespace Csharp_Collections_NoughtsCrosses
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Game game = new Game();
+            Console.WriteLine("Game Over");
         }
     }
 }
