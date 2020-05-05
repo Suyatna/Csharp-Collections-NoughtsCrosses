@@ -1,7 +1,31 @@
-﻿namespace Csharp_Collections_NoughtsCrosses
+﻿using System;
+
+namespace Csharp_Collections_NoughtsCrosses
 {
-    public class Square
+    public enum Player { Noone = 0, Noughts, Crosses}
+    
+    public struct Square
     {
-        
+        public Player Owner { get; }
+
+        public Square(Player owner)
+        {
+            this.Owner = owner;
+        }
+
+        public override string ToString()
+        {
+            switch (Owner)
+            {
+                case Player.Noone:
+                    return ".";
+                case Player.Crosses:
+                    return "X";
+                case Player.Noughts:
+                    return "O";
+                default:
+                    throw new Exception("Invalid state!");
+            }
+        }
     }
 }
