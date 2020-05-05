@@ -2,6 +2,13 @@
 {
     public class Game
     {
+        private Square[][] _board =
+        {
+            new Square[3],
+            new Square[3],
+            new Square[3]
+        };
+        
         
     }
 }
