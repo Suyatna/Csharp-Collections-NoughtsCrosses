@@ -4,12 +4,7 @@ namespace Csharp_Collections_NoughtsCrosses
 {
     public class Game
     {
-        private Square[][] _board =
-        {
-            new Square[3],
-            new Square[3],
-            new Square[3]
-        };
+        private Square[,] _board = new Square[3, 3];
 
         public void PlayGame()
         {
@@ -26,7 +21,7 @@ namespace Csharp_Collections_NoughtsCrosses
                     return;
                 }
 
-                player = 3 - player;
+                player = 3 - player; // swap player between X and O
             }
         }
 
@@ -36,7 +31,7 @@ namespace Csharp_Collections_NoughtsCrosses
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    Console.WriteLine(" " + _board[i][j]);
+                    Console.Write(" " + _board[i, j]);
                 }
                 Console.WriteLine();
             }
@@ -62,13 +57,13 @@ namespace Csharp_Collections_NoughtsCrosses
                 return false;
             }
 
-            if (_board[row - 1][column - 1].Owner != Player.Noone)
+            if (_board[row - 1, column - 1].Owner != Player.Noone)
             {
                 Console.WriteLine("Square is already occupied");
                 return false;
             }
             
-            _board[row - 1][column - 1] = new Square(player);
+            _board[row - 1, column - 1] = new Square(player);
             return true;
         }
     }
