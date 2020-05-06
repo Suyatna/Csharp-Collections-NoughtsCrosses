@@ -22,6 +22,8 @@ namespace Csharp_Collections_NoughtsCrosses
                 }
 
                 player = 3 - player; // swap player between X and O
+
+                @continue = CheckWin();
             }
         }
 
@@ -39,7 +41,6 @@ namespace Csharp_Collections_NoughtsCrosses
 
         bool PlayerMove(Player player)
         {
-            Console.WriteLine("Invalid input quits game!");
             Console.Write($"{player} : Enter row comma column, eg. 3,3 > ");
             string input = Console.ReadLine();
 
@@ -64,6 +65,58 @@ namespace Csharp_Collections_NoughtsCrosses
             }
             
             _board[row - 1, column - 1] = new Square(player);
+            return true;
+        }
+
+        bool CheckWin()
+        {
+            int cross = 0;
+            int nought = 0;
+
+            #region Horizontal
+            for (int i = 0; i < 3; i++)
+            {
+                if (_board[i, 0].Owner == Player.Crosses && _board[i, 1].Owner == Player.Crosses && _board[i, 2].Owner == Player.Crosses)
+                {
+                    cross++;
+                }
+                if (_board[i, 0].Owner == Player.Noughts && _board[i, 1].Owner == Player.Noughts && _board[i, 2].Owner == Player.Noughts)
+                {
+                    nought++;
+                }
+            }
+            #endregion
+
+            #region Vertical
+            for (int i = 0; i < 3; i++)
+            {
+                if (_board[0, i].Owner == Player.Crosses && _board[1, i].Owner == Player.Crosses && _board[2, i].Owner == Player.Crosses)
+                {
+                    cross++;
+                }
+                if (_board[0, i].Owner == Player.Noughts && _board[1, i].Owner == Player.Noughts && _board[2, i].Owner == Player.Noughts)
+                {
+                    nought++;
+                }
+            }
+            #endregion
+            
+            #region Asses
+            if (cross == 1)
+            {
+                DisplayBoard();
+                Console.WriteLine("Cross win!");
+                return false;
+            }
+            
+            if (nought == 1)
+            {
+                DisplayBoard();
+                Console.WriteLine("Cross win!");
+                return false;
+            }
+            #endregion
+
             return true;
         }
     }
