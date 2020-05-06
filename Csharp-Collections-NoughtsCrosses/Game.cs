@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Csharp_Collections_NoughtsCrosses
 {
@@ -10,11 +11,20 @@ namespace Csharp_Collections_NoughtsCrosses
         {
             Player player = Player.Crosses;
 
+            int count = 0;
+            
             bool @continue = true;
             while (@continue)
             {
                 DisplayBoard();
-
+                
+                Console.WriteLine($"count: {count}");
+                if (count == 9)
+                {
+                    Console.WriteLine("Draw!");
+                    return;
+                }
+                
                 @continue = PlayerMove(player);
                 if (!@continue)
                 {
@@ -22,7 +32,8 @@ namespace Csharp_Collections_NoughtsCrosses
                 }
 
                 player = 3 - player; // swap player between X and O
-
+                count++;
+                
                 @continue = CheckWin();
             }
         }
@@ -44,7 +55,8 @@ namespace Csharp_Collections_NoughtsCrosses
             Console.Write($"{player} : Enter row comma column, eg. 3,3 > ");
             string input = Console.ReadLine();
 
-            string[] parts = input.Split(',');
+            string[] parts = input?.Split(',');
+            Debug.Assert(parts != null, nameof(parts) + " != null");
             if (parts.Length != 2)
             {
                 return false;
@@ -80,6 +92,7 @@ namespace Csharp_Collections_NoughtsCrosses
                 {
                     cross++;
                 }
+                
                 if (_board[i, 0].Owner == Player.Noughts && _board[i, 1].Owner == Player.Noughts && _board[i, 2].Owner == Player.Noughts)
                 {
                     nought++;
@@ -94,6 +107,7 @@ namespace Csharp_Collections_NoughtsCrosses
                 {
                     cross++;
                 }
+                
                 if (_board[0, i].Owner == Player.Noughts && _board[1, i].Owner == Player.Noughts && _board[2, i].Owner == Player.Noughts)
                 {
                     nought++;
